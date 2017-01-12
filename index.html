@@ -3,13 +3,55 @@
     <head>
         <meta charset="utf-8">
         <title>FireBase Authentication</title>
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo:700" rel="stylesheet">
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <h1>FireBase Authentication</h1>
 
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- LOGIN FORM -->
+        <div class="text-center container login-page" style="padding:50px 0">
+        	<div class="logo">login</div>
+        	<!-- Main Form -->
+        	<div class="login-form-1">
+        		<form id="login-form" class="text-left">
+        			<div class="login-form-main-message"></div>
+        			<div class="main-login-form">
+        				<div class="login-group">
+        					<div class="form-group">
+        						<label for="lg_username" class="sr-only">Email</label>
+        						<input type="email" class="form-control" id="lg_username" name="lg_username" placeholder="email">
+        					</div>
+        					<div class="form-group">
+        						<label for="lg_password" class="sr-only">Password</label>
+        						<input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password">
+        					</div>
+        					<div class="form-group login-group-checkbox">
+        						<input type="checkbox" id="lg_remember" name="lg_remember">
+        						<label for="lg_remember">remember</label>
+        					</div>
+        				</div>
+                        <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+        			</div>
+        			<div class="etc-login-form">
+        				<p>forgot your password? <a href="#">click here</a></p>
+        				<p>new user? <a href="#">create new account</a></p>
+        			</div>
+        		</form>
+            </div>
+    	</div>
+
+        <!-- MAIN PAGE -->
+        <div class="main-page hide">
+            <h1>Welcome </h1>
+
+        </div>
+
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/bower_components/firebase/firebase.js"></script>
     <script type="text/javascript" src="app.js"></script>
     </body>
 </html>
