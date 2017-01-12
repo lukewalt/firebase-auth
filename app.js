@@ -45,7 +45,10 @@ $('form').submit((e) => {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            alert(errorCode, errorMessage);
+            if (error.message) {
+                $('.register').addClass('clickHere')
+            }
+            setTimeout(() => { alert("REGISTER BELOW    :   " + errorMessage ) }, 1000);
         // ...
         })
     e.preventDefault();
