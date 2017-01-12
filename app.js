@@ -45,7 +45,7 @@ $('form').submit((e) => {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            console.log(errorCode, errorMessage);
+            alert(errorCode, errorMessage);
         // ...
         })
     e.preventDefault();
@@ -53,7 +53,7 @@ $('form').submit((e) => {
 
 
 
-$('.btn-warning').click((e) => {
+$('.register').click((e) => {
 
     var email = $('input[type="email"]').val()
     var password = $('input[type="password"]').val()
@@ -71,7 +71,7 @@ $('.btn-warning').click((e) => {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            console.log(errorCode, errorMessage);
+            alert(errorCode, errorMessage);
         // ...
         })
     e.preventDefault();
