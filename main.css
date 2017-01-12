@@ -311,3 +311,21 @@ label:hover:before {
 .hide {
     visibility: hidden;
 }
+
+.signOut {
+    width:50%;
+}
+
+.todo-list {
+    border: 1px solid green;
+    min-height: 500px;
+    margin: 2% 25%;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.addToList {
+    height: 26px;
+    width: auto;
+    font-weight: lighter;
+}

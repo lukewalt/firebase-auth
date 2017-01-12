@@ -83,3 +83,16 @@ $('.register').click((e) => {
 $('.signOut').click(() => {
     firebase.auth().signOut();
 })
+
+
+
+$('.main-page form').submit((e) => {
+    var task = $('.main-page form input[type="text"]').val();
+    var uid = firebase.auth().currentUser.uid
+    $.post(
+        `https://practice-authentication.firebaseio.com/${uid}.json`,
+        JSON.stringify({ task : task })
+    ).then(console.log)
+
+    e.preventDefault();
+})
