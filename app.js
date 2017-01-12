@@ -1,1 +1,1 @@
-$('body').append("<h1>Hello</h1>");
+console.log("hey");
